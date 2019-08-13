@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.parse.starter.BloodBank"
+    android:background="@color/colorPrimary">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0"
+            android:id="@+id/greetings">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="90dp"
+                android:text="DEAR USER, THANKS FOR YOUR REQUEST OUR ADMINSTATOR SHALL CONTACT WITH YOU IN NEXT 24 HOURS"
+                android:textStyle="italic|bold"
+                android:textSize="30sp"
+                android:background="@color/yolo"
+                android:id="@+id/textView1"
+                android:textAlignment="center"
+                android:onClick="textViewClicked"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/r1"
+            android:alpha="1">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/grid_layout">
+
+                <Button
+                    android:id="@+id/b1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:onClick="searchDonor"
+                    android:text="Search Donor"
+                    android:background="@color/yolo1"
+                    android:textStyle="bold"
+                    />
+                <Button
+                    android:id="@+id/b2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:text="Blood Bank"
+                    android:background="@color/yolo3"
+                    android:textStyle="bold"
+
+
+                    />
+                <Button
+                    android:id="@+id/b3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:text="My Details"
+                    android:background="@color/yolo4"
+                    android:textStyle="bold"
+                    android:onClick="my_details"
+
+                    />
+
+
+
+            </GridLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/database"
+                android:padding="10dp"
+                android:text="Database"
+                android:textSize="30sp"
+                android:textStyle="bold|italic"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:background="@color/yolo5"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/grid_layout"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:id="@+id/T1"
+                android:text="A+ :"
+                android:textSize="20sp"
+                android:padding="2dp"
+                android:textStyle="bold|italic"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:layout_below="@id/database"
+                android:background="@color/yolo5"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:id="@+id/T2"
+                android:layout_below="@id/T1"
+                android:text="A- :"
+                android:textSize="20sp"
+                android:padding="2dp"
+                android:textStyle="bold|italic"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:background="@color/yolo5"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:id="@+id/T3"
+                android:layout_below="@id/T2"
+                android:text="O+ :"
+                android:textSize="20sp"
+                android:padding="2dp"
+                android:textStyle="bold|italic"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:background="@color/yolo5"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:id="@+id/T4"
+                android:layout_below="@id/T3"
+                android:text="O- :"
+                android:textSize="20sp"
+                android:padding="2dp"
+                android:textStyle="bold|italic"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:background="@color/yolo5"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:id="@+id/T5"
+                android:layout_below="@id/T4"
+                android:text="B+ :"
+                android:textSize="20sp"
+                android:padding="2dp"
+                android:textStyle="bold|italic"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:background="@color/yolo5"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:id="@+id/T6"
+                android:layout_below="@id/T5"
+                android:text="B- :"
+                android:textSize="20sp"
+                android:padding="2dp"
+                android:textStyle="bold|italic"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:background="@color/yolo5"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:id="@+id/T7"
+                android:layout_below="@id/T6"
+                android:text="AB+ :"
+                android:textSize="20sp"
+                android:padding="2dp"
+                android:textStyle="bold|italic"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:background="@color/yolo5"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:id="@+id/T8"
+                android:layout_below="@id/T7"
+                android:text="AB- :"
+                android:textSize="20sp"
+                android:padding="2dp"
+                android:textStyle="bold|italic"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:background="@color/yolo5"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="If you wish to connect with adminstator kindly press the button given below"
+                android:textSize="25sp"
+                android:textStyle="italic|bold"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/T8"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorAccent"
+                android:id="@+id/text1"/>
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="300dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text1"
+
+
+                android:layout_marginTop="30dp">
+
+            </Spinner>
+
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/sendrequest1"
+                android:onClick="sendrequest2"
+                android:text="SEND REQUEST"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:layout_below="@id/spinner1"
+
+                android:layout_marginTop="30dp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+</ScrollView>

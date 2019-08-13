@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <color name="colorPrimary">#f7cf0418</color>
+    <color name="colorPrimaryDark">#010315</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="yolo">#FF4081</color>
+    <color name="yolo1">#07f2de</color>
+    <color name="yolo2">#d1bd05</color>
+    <color name="yolo3">#75c407</color>
+    <color name="yolo4">#ef8f45</color>
+    <color name="yolo5">#f5ccad</color>
+    <color name="yolo6">#c6beb8</color>
+
+</resources>
